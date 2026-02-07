@@ -1,0 +1,26 @@
+.single_product_page {
+  justify-content: center;
+  padding: 32px 48px;
+}
+
+.single_product_thumbnails {
+  gap: 16px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.single_product_thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.single_product_display {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}

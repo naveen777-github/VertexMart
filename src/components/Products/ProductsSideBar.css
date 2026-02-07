@@ -1,0 +1,26 @@
+.products_sidebar {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.products_sidebar h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.products_sidebar a {
+  display: block;
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+.products_sidebar a:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
