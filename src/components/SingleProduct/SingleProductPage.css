@@ -4,6 +4,9 @@
 }
 
 .single_product_thumbnails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 8px;
   margin: 16px;
@@ -19,8 +22,11 @@
 }
 
 .single_product_display {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   border-radius: 10px;
+}
+.selected_image {
+  transform: scale(1.1);
 }
