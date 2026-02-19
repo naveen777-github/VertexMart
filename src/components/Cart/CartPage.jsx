@@ -2,7 +2,8 @@ import React from "react";
 import "./CartPage.css";
 import user from "../../assets/user.webp";
 import { Table } from "../Common/Table.jsx";
-
+import Quantity from "../Common/Quantity.jsx";
+import removeIcon from "../../assets/remove.png";
 const CartPage = () => {
   const profile = {
     name: "Ram",
@@ -30,8 +31,18 @@ const CartPage = () => {
       </div>
 
       <Table
-        headings={["Product", "Price", "Quantity", "Total"]}
-        rows={[["Product 1", "$10.00", "2", "$20.00"]]}
+        headings={["Product", "Price", "Quantity", "Total", "Remove"]}
+        rows={[
+          [
+            "Product 1",
+            "$10.00",
+            <Quantity />,
+            "$20.00",
+            <div className="align-center remove-icon-container">
+              <img src={removeIcon} className="remove-icon" alt="Remove" />
+            </div>,
+          ],
+        ]}
       />
 
       <div className=" align-center  cart-container">

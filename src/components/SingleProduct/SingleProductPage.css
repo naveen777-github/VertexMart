@@ -75,40 +75,6 @@
 .single_product_add_to_cart:hover {
   background-color: #c2185b;
 }
-.quantity_input {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 5px 0 16px;
-}
-.quantity_input_button {
-  display: flex;
-  flex-direction: column;
-  width: 35px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.quantity_input_button:hover {
-  background-color: #f0f0f0;
-}
-
-.quantity_input_button:disabled {
-  cursor: not-allowed;
-  background-color: #e0e0e0;
-}
-
-.quantity_input_count {
-  width: 20px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-}
 
 .add_cart {
   width: fit-content;

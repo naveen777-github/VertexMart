@@ -1,5 +1,6 @@
 import React from "react";
 import "./SingleProductPage.css";
+import Quantity from "../Common/Quantity";
 
 const product = {
   id: 1,
@@ -46,13 +47,7 @@ const SingleProductPage = () => {
           Price: ${product.price.toFixed(2)}
         </p>
         <h2 className="single_product_stock">Stock: {product.stock}</h2>
-        <div className="align_center quantity_input">
-          <button className="quantity_input_button" disabled>
-            -
-          </button>
-          <p className="quantity_input_count"> 1</p>
-          <button className="quantity_input_button">+</button>
-        </div>
+        <Quantity />
         <button className="search_button add_cart">Add to Cart</button>
       </div>
     </section>

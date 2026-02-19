@@ -54,6 +54,15 @@
   font-size: 0.96rem;
 }
 
+.remove-icon-container {
+  justify-content: center;
+}
+.remove-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
 .cart-container {
   justify-content: right;
 }
@@ -118,7 +127,7 @@
 .search-button {
   flex-direction: row;
   justify-content: center;
-  width: 50%;
+  width: 25%;
   padding: 0.95rem 1rem;
   border: none;
   border-radius: 12px;
