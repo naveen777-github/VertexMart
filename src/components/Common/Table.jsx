@@ -3,23 +3,30 @@ import React from "react";
 import "./Table.css";
 
 export const Table = ({ headings, rows }) => {
+  const safeHeadings = Array.isArray(headings) ? headings : [];
+  const safeRows = Array.isArray(rows) ? rows : [];
+
   return (
     <table className="common-table">
       <thead>
         <tr>
-          {headings.map((heading, index) => (
+          {safeHeadings.map((heading, index) => (
             <th key={index}>{heading}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {rows.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((cell, cellIndex) => (
+        {safeRows.map((row, rowIndex) => {
+          const safeRow = Array.isArray(row) ? row : [row];
+
+          return (
+            <tr key={rowIndex}>
+              {safeRow.map((cell, cellIndex) => (
               <td key={cellIndex}>{cell}</td>
-            ))}
-          </tr>
-        ))}
+              ))}
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
