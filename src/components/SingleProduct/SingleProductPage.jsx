@@ -39,7 +39,7 @@ const SingleProductPage = () => {
         alt={product.title}
         className="single_product_display"
       />
-      <div className="align-center single_product_details">
+      <div className="single_product_details">
         <h2 className="single_product_title">{product.title}</h2>
         <p className="single_product_description">{product.description}</p>
         <p className="single_product_price">
@@ -52,8 +52,8 @@ const SingleProductPage = () => {
           </button>
           <p className="quantity_input_count"> 1</p>
           <button className="quantity_input_button">+</button>
-          <button className="search_button add_cart">Add to Cart</button>
         </div>
+        <button className="search_button add_cart">Add to Cart</button>
       </div>
     </section>
   );

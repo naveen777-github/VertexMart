@@ -30,3 +30,92 @@
 .selected_image {
   transform: scale(1.1);
 }
+.selected_image:hover {
+  transform: scale(1.15);
+}
+
+.single_product_details {
+  width: 35%;
+  padding: 16px 24px;
+}
+
+.single_product_title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.single_product_description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.single_product_price {
+  font-size: 24px;
+  font-weight: 600px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.qunatity_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.single_product_add_to_cart {
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+.single_product_add_to_cart:hover {
+  background-color: #c2185b;
+}
+.quantity_input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0 16px;
+}
+.quantity_input_button {
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.quantity_input_button:hover {
+  background-color: #f0f0f0;
+}
+
+.quantity_input_button:disabled {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+}
+
+.quantity_input_count {
+  width: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.add_cart {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

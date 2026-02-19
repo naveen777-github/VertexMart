@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import HomePage from "./components/Home/HomePage.jsx";
 import ProductsPage from "./components/Products/ProductsPage.jsx";
 import SingleProductPage from "./components/SingleProduct/SingleProductPage.jsx";
+import CartPage from "./components/Cart/CartPage.jsx";
 export default function App() {
   return (
     <div className="app">
@@ -12,7 +13,8 @@ export default function App() {
         {/* <HomePage /> */}
 
         {/* <ProductsPage /> */}
-        <SingleProductPage />
+        {/* <SingleProductPage /> */}
+        <CartPage />
       </main>
     </div>
   );
